@@ -1,0 +1,41 @@
+him<h1 class="cs-header">H&C Email Signature Generator<span style="font-size:16px; color:#d8d8d8"> v1.0</span></h1>
+<div class="cs-outer-container">
+  <div class="cs-container">
+    <form>
+      <label for="name">Your name</label><br />
+      <input id="cs-employee-name" placeholder="Tibor Miklos" type="text"><br /><br />
+
+      <label for="name">Your pronouns</label><br />
+      <input id="cs-employee-pronouns" placeholder="(he/him)" type="text"><br /><br />
+
+      <label for="title">Your title</label><br />
+      <input id="cs-employee-title" placeholder="Senior Designer" type="text"><br /><br />
+
+      <label for="mobile-number">Mobile/cell number<br /><span style="font-size:13px; color:#999999;">'M.' + formatted as below</span></label><br />
+      <input id="cs-employee-mphone" placeholder="M. +44 07890 123 456" type="text"><br /><br />
+
+      <label for="office-number">Office number<br /><span style="font-size:13px; color:#999999;">'T.' + formatted as below</span></label><br />
+      <input id="cs-employee-tphone" placeholder="T. +44 20 7375 0909" type="text"><br /><br />
+
+      <label for="address">Office address</label><br />
+
+      <select name="address" id="cs-address">
+        <option value="135 Bishopsgate, London, EC2M 3AN">London</option>
+        <option value="14th floor, 909 Third Avenue, New York, NY 10022">New York</option>
+      </select><br /><br />
+      <p>
+        <a class="cs-create-terms" onclick="createTerms()">Generate</a>       </p>
+    </form>
+  </div>
+  <div class="cs-output-container" style="margin-left: 30px;">
+    <h3 class="cs-header">Here's how it works:</h3>
+    <ol>
+      <li class="cs-desc">Fill in the form on the right with your details. For best results follow the formatting shown in the boxes. Press 'Generate'</li>
+      <li class="cs-desc">Select the generated email signature from the box below</li>
+      <li class="cs-desc">(Copy and) paste it into a new signature in Outlook > Preferences > Signatures</li>
+      <li class="cs-desc">Save and enjoy</li>
+    </ol>
+    <h4 class="cs-header">Please copy the email signature below:</h4>
+    <div id="cs-output-signature"></div>
+  </div>
+</div>
